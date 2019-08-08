@@ -99,8 +99,8 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-        console.log(msg);
-        if (msg.success == true) {
+        console.log(JSON.stringify(msg));
+        if (msg) {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
