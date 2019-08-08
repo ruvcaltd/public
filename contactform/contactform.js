@@ -91,9 +91,8 @@ jQuery(document).ready(function($) {
     if (ferror) return false;
     else var str = $(this).serialize();
     var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'contactform/contactform.php';
-    }
+    
+    
     $.ajax({
       type: "POST",
       url: action,
@@ -115,4 +114,29 @@ jQuery(document).ready(function($) {
     return false;
   });
 
+
+  $('form.newsletter').submit(function() { 
+    console.log("submitted");
+    var str = $(this).serialize();
+    var action = $(this).attr('action');
+    $('#newletterEmail').val("");     
+    
+    $.ajax({
+      type: "POST",
+      url: action,
+      data: str,
+      success: function(msg) {
+        console.log(JSON.stringify(msg));
+        if (msg) {                  
+          alert("Subscribed to newsletters successfully!")          
+          $('#newletterEmail').val(""); 
+        } 
+      }
+    });
+    return false;
+  });
+
+
+
 });
+
