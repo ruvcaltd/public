@@ -100,7 +100,7 @@ jQuery(document).ready(function($) {
       data: str,
       success: function(msg) {
         console.log(msg);
-        if (msg.status == 'success') {
+        if (msg.success == true) {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
