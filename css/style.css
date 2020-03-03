@@ -218,6 +218,7 @@ h6 {
   background-size: cover;
 }
 
+
 #intro .intro-info h2 {
   color: #413e66;
   margin-bottom: 40px;
@@ -725,6 +726,45 @@ h6 {
   background: #1bb1dc;
   border: 3px solid #1bb1dc;
 }
+
+
+/* Call To Action Startup Section
+--------------------------------*/
+
+#call-to-action-startup {
+    background: #2d2b46;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+    #call-to-action-startup .cta-title {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    #call-to-action-startup .cta-text {
+        color: #fff;
+    }
+
+    #call-to-action-startup .cta-btn {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 26px;
+        border-radius: 3px;
+        transition: 0.5s;
+        margin: 10px;
+        border: 3px solid #fff;
+        color: #fff;
+    }
+
+        #call-to-action-startup .cta-btn:hover {
+            background: #1bb1dc;
+            border: 3px solid #1bb1dc;
+        }
 
 /* Features Section
 --------------------------------*/
